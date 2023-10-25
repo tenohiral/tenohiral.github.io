@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ポートフォリオ</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #333;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+
+    .box {
+      width: 600px;
+      height: 200px;
+      margin: 0 auto;
+      background-color: #555;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .box img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .box h1 {
+      font-size: 36px;
+    }
+
+    .box p {
+      font-size: 18px;
+    }
+
+    .box a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .circle {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background-color: black;
+      animation: move 10s linear infinite alternate;
+    }
+
+    .circle:nth-child(2) {
+      top: -100px;
+      left: -100px;
+    }
+
+    .circle:nth-child(3) {
+      top: -100px;
+      right: -100px;
+    }
+
+    .circle:nth-child(4) {
+      bottom: -100px;
+      left: -100px;
+    }
+
+    .circle:nth-child(5) {
+      bottom: -100px;
+      right: -100px;
+    }
+
+    @keyframes move {
+      from {
+        transform: translate(0, 0);
+        opacity: 0.5;
+      }
+      
+      to {
+        transform: translate(200px, 200px);
+        opacity: 1.0; 
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <img src="image.jpg" alt="プロフィール画像">
+      <div class="info">
+        <h1>山田太郎</h1>
+        <p>Webデザイナー・フロントエンドエンジニア</p>
+        <p><a href="^1^"><i class="fab fa-twitter"></i> Twitter</a></p>
+        <p><a href="^2^"><i class="fab fa-github"></i> GitHub</a></p>
+        <p><a href="^3^"><i class="fas fa-envelope"></i> メール</a></p>
+        
